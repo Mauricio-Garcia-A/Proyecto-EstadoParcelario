@@ -13,6 +13,11 @@ import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Link } from 'react-router-dom';
+import useParcelaId from '../../hooks/useParcelaId';
+
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+
 
 function createData(id,mz, pa) {
   return {
@@ -41,12 +46,15 @@ function Row(props) {
         <TableCell align="center" component="th" scope="row" sx={{ background: 'rgba(34, 34, 34, 0.1)'}}>
           {i}
         </TableCell>
-        <TableCell align="left"><b>MZ: </b>{row.mz}</TableCell>
-        <TableCell align="left"><b>PA: </b>{row.pa}</TableCell>
+        <TableCell align="left"><b>MZ: </b>{row.nom_cat.mz}</TableCell>
+        <TableCell align="left"><b>PA: </b>{row.nom_cat.pa}</TableCell>
+        <TableCell align="left"><b>PARTIDA: </b>{row.partida}</TableCell>
         <TableCell align="left">## estado ## </TableCell>
         <TableCell align="left">## titulares ##</TableCell>
         <TableCell align="right">
-        <Link key={'item'+row.id}  to={`/parcela/${row.id}`}>BOTON</Link>
+        <Button variant="contained" endIcon={<SendIcon />}>
+            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} key={'item'+row.id}  to={`/parcela/${row.id}`}>VER MAS INFORMACION</Link>
+        </Button>
         </TableCell>
       </TableRow>
       <TableRow>
@@ -57,10 +65,12 @@ function Row(props) {
                 Informacion Descriptiva
               </Typography>
               <section>
-                <p>{"{ ... }"}</p>
-                <p>{"{ ... }"}</p>
-                <p>{"{ ... }"}</p>
-               
+                <p><b>N° PARTIDA:</b> {row.partida}</p>
+                <p><b>PARTIDO:</b>{row.partido} - Daireaux</p>
+                <p><b>MANZANA:</b>{row.nom_cat.mz}</p>
+                <p><b>PARCELA:</b>{row.nom_cat.pa}</p>
+                <p><b>C:</b> {row.nom_cat.c}</p>
+                <p><b>S:</b> {row.nom_cat.s}</p>
               </section>
             </Box>
           </Collapse>
@@ -75,6 +85,7 @@ function Row(props) {
 
 
 export default function TableDescription({rows}) {
+
 
   const rowsFormatiadas = [];
   rows.map(row =>{
@@ -91,6 +102,7 @@ export default function TableDescription({rows}) {
             <TableCell align="center" sx={{ width:'100px'}}>N° de Terrenos</TableCell>
             <TableCell align="left"  sx={{ width:'100px'}}>MANZANA</TableCell>
             <TableCell align="left"  sx={{ width:'100px'}}>PARCELA</TableCell>
+            <TableCell align="left"  sx={{ width:'100px'}}>PARTIDA</TableCell>
             <TableCell align="left"  sx={{ width:'150px'}}>ESTADO</TableCell>
             <TableCell align="left">TITULAR</TableCell>
             <TableCell sx={{ width:'200px'}} />
@@ -98,9 +110,11 @@ export default function TableDescription({rows}) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rowsFormatiadas.map((row, i) => (
-            <Row key={row.name} row={row} i={i} />
-          ))}
+          {rowsFormatiadas.map((row, i) => {
+            const {parcelaSeleccionada} = useParcelaId(row.id)
+            console.log(parcelaSeleccionada)
+            return <Row key={row.name} row={parcelaSeleccionada} i={i} />
+          })}
         </TableBody>
       </Table>
     </TableContainer>

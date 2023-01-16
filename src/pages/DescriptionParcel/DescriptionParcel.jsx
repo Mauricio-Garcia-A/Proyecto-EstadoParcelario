@@ -7,7 +7,6 @@ import './DescriptionParcel.css'
 
 export default function DescriptionParcel() {
 
-  TITULARES
   let MATTIOLI = TITULARES[0]
 
 
