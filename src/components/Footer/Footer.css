@@ -1,0 +1,9 @@
+.contenedor-footer {
+    background: #222;
+
+    margin: 0;
+    padding: 30px 0px 0px 0px;
+    margin-bottom: 5px;
+    border-radius: 0px 0px 20px 20px;
+    border: 3px solid rgba(13, 10, 10, 0.678);
+}

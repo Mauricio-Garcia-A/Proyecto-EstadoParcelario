@@ -1,0 +1,12 @@
+.contenedor-header{
+    background: rgb(121, 149, 250);
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 10px;
+    border: 3px solid #1976d2;
+    border-bottom: 0px;
+    z-index: 10;
+    position: relative;
+}
+.contenedor-header h1 {
+    opacity: 0.6;
+}

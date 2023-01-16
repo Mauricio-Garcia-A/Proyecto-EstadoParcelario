@@ -1,32 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Home from './pages/Home/Home'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import ListParcel from './pages/ListParcel/ListParcel'
+import { Route, Routes } from 'react-router-dom'
+import DescriptionParcel from './pages/DescriptionParcel/DescriptionParcel'
+import SelectedParcel from './pages/SelectedParcel/SelectedParcel'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Proyecto-EstadoParcelario" element={<Home />} />
+        <Route path={"/lista-parcelas"} element={<ListParcel />} />
+        <Route path={"/descripcion-parcelas"} element={<DescriptionParcel />} />
+        <Route path="/parcela/:id" element={<SelectedParcel />} />
+        <Route path="*" element={<>ERROR...!!!</>} />
+      </Routes>
+
+      <Footer />
     </div>
   )
 }

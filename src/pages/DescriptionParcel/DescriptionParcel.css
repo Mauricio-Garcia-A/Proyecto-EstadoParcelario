@@ -1,0 +1,8 @@
+.contenedor-descripcion-parcela {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}

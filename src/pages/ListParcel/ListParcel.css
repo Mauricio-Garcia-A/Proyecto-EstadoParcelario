@@ -1,0 +1,6 @@
+.contenedor-titulares{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 50px;
+}
