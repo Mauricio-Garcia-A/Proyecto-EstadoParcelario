@@ -18,6 +18,8 @@ import useParcelaId from '../../hooks/useParcelaId';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
+import './Tables.css'
+
 
 function createData(id,mz, pa) {
   return {
@@ -58,19 +60,24 @@ function Row(props) {
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={8}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="h6" gutterBottom component="div">
                 Informacion Descriptiva
               </Typography>
-              <section>
-                <p><b>N° PARTIDA:</b> {row.partida}</p>
-                <p><b>PARTIDO:</b>{row.partido} - Daireaux</p>
-                <p><b>MANZANA:</b>{row.nom_cat.mz}</p>
-                <p><b>PARCELA:</b>{row.nom_cat.pa}</p>
-                <p><b>C:</b> {row.nom_cat.c}</p>
-                <p><b>S:</b> {row.nom_cat.s}</p>
+              <section className='contenedor-tabla-descripcion-parcela'>
+                <article>
+                  <p><b>N° PARTIDA:</b> {row.partida}</p>
+                  <p><b>PARTIDO:</b>{row.partido} - Daireaux</p>
+                  <p><b>MANZANA:</b>{row.nom_cat.mz}</p>
+                  <p><b>PARCELA:</b>{row.nom_cat.pa}</p>
+                  <p><b>C:</b> {row.nom_cat.c}</p>
+                  <p><b>S:</b> {row.nom_cat.s}</p>
+                </article>
+                <article className='contenedor-imagen-parcela'>
+                  <img src={`/imagenes-parcelas/${row.partida}.png`} alt={`parcelas-${row.nom_cat.pa}.png`} />
+                </article>
               </section>
             </Box>
           </Collapse>
