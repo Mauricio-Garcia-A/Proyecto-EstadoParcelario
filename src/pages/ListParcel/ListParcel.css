@@ -3,4 +3,5 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     gap: 50px;
+    overflow-x:scroll;
 }

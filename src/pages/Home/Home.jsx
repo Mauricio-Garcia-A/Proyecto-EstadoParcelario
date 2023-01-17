@@ -1,5 +1,7 @@
 import React from 'react'
 import { TITULARES } from '../../assets/auxBD'
+import useParcelaId from '../../hooks/useParcelaId'
+import useParcelasHome from '../../hooks/usePaselasHome'
 
 //import getParcelas from '../../sevicios/getParcelas'
 import './Home.css'
@@ -14,6 +16,7 @@ export default function Home() {
   let MATTIOLI = TITULARES[0]
   let loding = false
 
+  const {parcelaHome}=useParcelasHome()
   
   return (
     <section className='contenedor-stadar'>
@@ -24,8 +27,8 @@ export default function Home() {
             ? <p>CARGANDO ... </p>
             : <>
               <p>{`${MATTIOLI.titular} (${MATTIOLI.parcelas.length})`}</p>
-              {MATTIOLI.parcelas.map((parcela, i) => {
-                return <p key={`parcela-${i}`}>{parcela.id}</p>
+              {parcelaHome.map((parcela, i) => {
+                return <p key={`parcela-${i}`}>{`${parcela.partida} - MZ:${parcela.nom_cat.mz} PA:${parcela.nom_cat.pa}`}</p>
               })}
 
             </>

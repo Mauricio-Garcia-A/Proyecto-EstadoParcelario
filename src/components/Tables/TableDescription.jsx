@@ -119,7 +119,6 @@ export default function TableDescription({rows}) {
         <TableBody>
           {rowsFormatiadas.map((row, i) => {
             const {parcelaSeleccionada} = useParcelaId(row.id)
-            console.log(parcelaSeleccionada)
             return <Row key={row.name} row={parcelaSeleccionada} i={i} />
           })}
         </TableBody>
