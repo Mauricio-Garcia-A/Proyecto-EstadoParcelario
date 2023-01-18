@@ -26,9 +26,11 @@ export default function Home() {
           {loding
             ? <p>CARGANDO ... </p>
             : <>
-              <p>{`${MATTIOLI.titular} (${MATTIOLI.parcelas.length})`}</p>
+              <h3>{`${MATTIOLI.titular} (${MATTIOLI.parcelas.length})`}</h3>
               {parcelaHome.map((parcela, i) => {
-                return <p key={`parcela-${i}`}>{`${parcela.partida} - MZ:${parcela.nom_cat.mz} PA:${parcela.nom_cat.pa}`}</p>
+                return <p key={`parcela-${i}`} > 
+                          <b className={`parcela-${parcela.titularidad}`}>{`${parcela.partida} - `}</b>{`MZ:${parcela.nom_cat.mz} PA:${parcela.nom_cat.pa}`}
+                        </p>
               })}
 
             </>

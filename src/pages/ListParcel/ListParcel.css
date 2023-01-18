@@ -1,7 +1,8 @@
 .contenedor-titulares{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     gap: 50px;
-    overflow-x:scroll;
+    overflow-x: scroll;
+    width: 100%;
 }

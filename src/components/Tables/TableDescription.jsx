@@ -21,13 +21,7 @@ import SendIcon from '@mui/icons-material/Send';
 import './Tables.css'
 
 
-function createData(id,mz, pa) {
-  return {
-    id,
-    mz,
-    pa,
-  };
-}
+
 
 function Row(props) {
   const { row, i} = props;
@@ -45,14 +39,34 @@ function Row(props) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell align="center" component="th" scope="row" sx={{ background: 'rgba(34, 34, 34, 0.1)'}}>
-          {i}
+        <TableCell align="center" component="th" scope="row" className={`parcela-descripcion-${row.titularidad}`}>
+          {i+1}
         </TableCell>
         <TableCell align="left"><b>MZ: </b>{row.nom_cat.mz}</TableCell>
         <TableCell align="left"><b>PA: </b>{row.nom_cat.pa}</TableCell>
         <TableCell align="left"><b>PARTIDA: </b>{row.partida}</TableCell>
-        <TableCell align="left">## estado ## </TableCell>
-        <TableCell align="left">## titulares ##</TableCell>
+        <TableCell align="left" className={`parcela-descripcion-${row.estado.tipo}`}>
+          <b>{
+            (row.estado.tipo==='dominio')
+              ? 'EN DOMINIO DEL TITULAR'
+              : (row.estado.tipo==='usurpado')
+                  ? 'USURPADO'
+                  :(row.estado.tipo==='vendido')
+                    ? 'VENDIDO por BOLETO (sin escriturar)'
+                    : "LIBRE"
+          }</b> 
+          <p>{row.estado.persona}</p>
+        </TableCell>
+        <TableCell align="left">
+          { (row.titularidad=='unica')
+              ?<p>Mattioli Miguel Antonio</p>
+              :<>
+                <p>Mattioli Miguel Antonio</p>
+                <p>Rivero Miguel Alberto</p>
+              </>
+          }
+
+        </TableCell>
         <TableCell align="right">
         <Button variant="contained" endIcon={<SendIcon />}>
             <Link style={{ color: 'inherit', textDecoration: 'inherit'}} key={'item'+row.id}  to={`/parcela/${row.id}`}>VER MAS INFORMACION</Link>
@@ -93,13 +107,6 @@ function Row(props) {
 
 export default function TableDescription({rows}) {
 
-
-  const rowsFormatiadas = [];
-  rows.map(row =>{
-    rowsFormatiadas.push(createData(row.id,row.mz,row.pa),
-    )
-  })
-
   return (
     <TableContainer component={Paper} >
       <Table aria-label="collapsible table">
@@ -117,9 +124,8 @@ export default function TableDescription({rows}) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rowsFormatiadas.map((row, i) => {
-            const {parcelaSeleccionada} = useParcelaId(row.id)
-            return <Row key={row.name} row={parcelaSeleccionada} i={i} />
+          {rows.map((row, i) => {
+            return <Row key={`row-${row.id}`} row={row} i={i} />
           })}
         </TableBody>
       </Table>

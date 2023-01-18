@@ -23,7 +23,7 @@ const pages = [{
   path: '/lista-parcelas'
 },
 {
-  title: 'Descipcion de los Terrenos',
+  title: 'Descripcion de los Terrenos',
   path: '/descripcion-parcelas'
 }
 ];

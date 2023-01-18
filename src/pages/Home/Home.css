@@ -4,3 +4,9 @@
 .contenedor-lista-terrenos h2{
     text-align: center;
 }
+.parcela-compartida {
+    color: rgb(255, 132, 0);
+}
+.parcela-unica {
+    color: green;
+}

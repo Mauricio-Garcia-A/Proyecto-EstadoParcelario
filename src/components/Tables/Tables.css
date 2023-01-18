@@ -18,3 +18,23 @@
     border-radius: 6px;
 
 }
+
+.parcela-descripcion-compartida {
+    background: rgba(255, 132, 0, 0.193);
+}
+.parcela-descripcion-unica {
+    background: rgba(3, 193, 3, 0.195);
+}
+
+.parcela-descripcion-dominio {
+    background: rgba(12, 255, 12, 0.559);
+}
+.parcela-descripcion-vendido {
+    background: rgba(255, 132, 0, 0.584);
+}
+.parcela-descripcion-usurpado {
+    background: rgba(255, 0, 0, 0.744);
+}
+.parcela-descripcion-libre {
+    background: rgba(4, 0, 254, 0.581);
+}
