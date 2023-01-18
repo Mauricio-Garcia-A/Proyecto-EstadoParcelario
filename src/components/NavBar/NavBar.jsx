@@ -55,7 +55,7 @@ function NavBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Container sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width: "80px" }} >
-            <img src='/logo.png' style={{ width: '40px', paddingRight: '10px' }} />
+            <img src='/Proyecto-EstadoParcelario/logo.png' style={{ width: '40px', paddingRight: '10px' }} />
           </Container>
           <Typography
             variant="h6"
@@ -118,7 +118,7 @@ function NavBar() {
           </Box>
 
           <Container sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, width: "80px" }} maxWidth="sm">
-            <img src='/logo.png' style={{ width: '40px', paddingRight: '10px' }} />
+            <img src='/Proyecto-EstadoParcelario/logo.png' style={{ width: '40px', paddingRight: '10px' }} />
           </Container>
           <Typography
             variant="h5"
@@ -158,7 +158,7 @@ function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Mauro Ariel Mattioli">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/fotoPerfil.png" />
+                <Avatar alt="Remy Sharp" src="/Proyecto-EstadoParcelario/fotoPerfil.png" />
               </IconButton>
             </Tooltip>
 

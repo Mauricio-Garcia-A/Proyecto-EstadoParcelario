@@ -89,7 +89,7 @@ function Row(props) {
                   <p><b>S:</b> {row.nom_cat.s}</p>
                 </article>
                 <article className='contenedor-imagen-parcela'>
-                  <img src={`/imagenes-parcelas/${row.partida}.png`} alt={`parcelas-${row.nom_cat.pa}.png`} />
+                  <img src={`/Proyecto-EstadoParcelario/imagenes-parcelas/${row.partida}.png`} alt={`parcelas-${row.nom_cat.pa}.png`} />
                 </article>
               </section>
             </Box>
