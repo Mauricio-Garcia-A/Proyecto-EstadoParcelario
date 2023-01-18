@@ -16,15 +16,15 @@ import { NavLink } from 'react-router-dom';
 
 const pages = [{
   title: 'HOME',
-  path: '/'
+  path: '/Proyecto-EstadoParcelario/'
 },
 {
   title: 'Listado de Terrenos',
-  path: '/lista-parcelas'
+  path: '/Proyecto-EstadoParcelario/lista-parcelas'
 },
 {
   title: 'Descripcion de los Terrenos',
-  path: '/descripcion-parcelas'
+  path: '/Proyecto-EstadoParcelario/descripcion-parcelas'
 }
 ];
 //const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

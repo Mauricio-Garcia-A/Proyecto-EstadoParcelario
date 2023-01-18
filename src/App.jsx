@@ -19,9 +19,12 @@ function App() {
         <Route path="/Proyecto-EstadoParcelario" element={<Home />} />
         <Route path={"/lista-parcelas"} element={<ListParcel />} />
         <Route path={"/descripcion-parcelas"} element={<DescriptionParcel />} />
+        <Route path="/parcela/:id" element={<SelectedParcel />} />
+
         <Route path={"/Proyecto-EstadoParcelario/lista-parcelas"} element={<ListParcel />} />
         <Route path={"/Proyecto-EstadoParcelario/descripcion-parcelas"} element={<DescriptionParcel />} />
-        <Route path="/parcela/:id" element={<SelectedParcel />} />
+        <Route path="/Proyecto-EstadoParcelario/parcela/:id" element={<SelectedParcel />} />
+
         <Route path="*" element={<>ERROR...!!!</>} />
       </Routes>
 

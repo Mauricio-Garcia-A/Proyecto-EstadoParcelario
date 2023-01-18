@@ -13,7 +13,6 @@ import Paper from '@mui/material/Paper';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Link } from 'react-router-dom';
-import useParcelaId from '../../hooks/useParcelaId';
 
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -69,7 +68,7 @@ function Row(props) {
         </TableCell>
         <TableCell align="right">
         <Button variant="contained" endIcon={<SendIcon />}>
-            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} key={'item'+row.id}  to={`/parcela/${row.id}`}>VER MAS INFORMACION</Link>
+            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} key={'item'+row.id}  to={`/Proyecto-EstadoParcelario/parcela/${row.id}`}>VER MAS INFORMACION</Link>
         </Button>
         </TableCell>
       </TableRow>
