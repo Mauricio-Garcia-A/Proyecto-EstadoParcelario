@@ -1,0 +1,36 @@
+
+
+.contenedor-parcela-seleccionada header {
+    position: relative;
+}
+.contenedor-parcela-seleccionada header .boton-atras {
+    opacity: 0.6;
+    border: 1px solid gray;
+    fill:rgb(108, 108, 108);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -55px;
+    left: 0;
+}
+.contenedor-parcela-seleccionada header h1 {
+    padding: 0;
+    margin-bottom: 0;
+}
+.contenedor-parcela-seleccionada header b {
+ color:rgb(154, 3, 3)
+}
+.contenedor-parcela-seleccionada header h2 {
+    color:rgb(133, 133, 133)
+
+}
+.contenedor-imagen-parcela-2 {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(185, 184, 184);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px ;
+}
