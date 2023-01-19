@@ -10,6 +10,7 @@
 
 .contenedor-lista-terrenos {
     text-align: left;
+    width: 200px;
 }
 .contenedor-lista-terrenos h2{
     text-align: center;
