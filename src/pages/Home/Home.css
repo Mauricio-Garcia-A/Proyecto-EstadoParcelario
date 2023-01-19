@@ -1,3 +1,13 @@
+.contenedor-home {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.contenedor-mapas {
+    width: 80%;
+}
+
+
 .contenedor-lista-terrenos {
     text-align: left;
 }
@@ -9,4 +19,39 @@
 }
 .parcela-unica {
     color: green;
+}
+
+.contenedor-imagen-mz-dx {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgb(182, 182, 182);
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-imagen-mz-dx img {
+    width: 100%;
+}
+.contenedor-imagen-mzs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+.contenedor-imagen-mz {
+    width: 45%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgb(182, 182, 182);
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-imagen-mz img {
+    width: 100%;
 }
