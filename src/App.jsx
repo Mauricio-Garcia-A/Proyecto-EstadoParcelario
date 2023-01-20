@@ -7,6 +7,7 @@ import ListParcel from './pages/ListParcel/ListParcel'
 import { Route, Routes } from 'react-router-dom'
 import DescriptionParcel from './pages/DescriptionParcel/DescriptionParcel'
 import SelectedParcel from './pages/SelectedParcel/SelectedParcel'
+import ExtraInformation from './pages/ExtraInformation/ExtraInformation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
         <Route path={"/Proyecto-EstadoParcelario/lista-parcelas"} element={<ListParcel />} />
         <Route path={"/Proyecto-EstadoParcelario/descripcion-parcelas"} element={<DescriptionParcel />} />
         <Route path="/Proyecto-EstadoParcelario/parcela/:id" element={<SelectedParcel />} />
+        <Route path="/Proyecto-EstadoParcelario/info-extra" element={<ExtraInformation />} />
 
         <Route path="*" element={<>ERROR...!!!</>} />
       </Routes>

@@ -1,7 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { TITULARES } from '../../assets/auxBD'
 import useParcelaId from '../../hooks/useParcelaId'
 import useParcelasHome from '../../hooks/usePaselasHome'
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+
+
+
 
 //import getParcelas from '../../sevicios/getParcelas'
 import './Home.css'
@@ -24,32 +30,35 @@ export default function Home() {
 
   return (
     <section className='contenedor-stadar'>
-      
+
       <h2>Informacion general de los terrenos</h2>
       <h3>{`${MATTIOLI.titular} (${MATTIOLI.parcelas.length})`}</h3>
       <div className='contenedor-home'>
-          <article className='contenedor-lista-terrenos'>
-            <div className='contenedor'>
-              {loding
-                ? <p>CARGANDO ... </p>
-                : <>
-                  <h3><u>PARCELAS</u></h3>
-                  {parcelaHome.map((parcela, i) => {
-                    return <p key={`parcela-${i}`} >
-                      <b className={`parcela-${parcela.titularidad}`}>{`${parcela.partida}`}</b>
-                     
-                      <b> - MZ: </b>{`${parcela.nom_cat.mz}`}
-                      &nbsp; &nbsp;
-                      <b>PA: </b>{`${parcela.nom_cat.pa}`}
-                    </p>
-                  })}
+        <article className='contenedor-lista-terrenos'>
+          <div className='contenedor'>
+            {loding
+              ? <p>CARGANDO ... </p>
+              : <>
+                <h3><u>PARCELAS</u></h3>
+                {parcelaHome.map((parcela, i) => {
+                  return <p key={`parcela-${i}`} >
+                    <b className={`parcela-${parcela.titularidad}`}>{`${parcela.partida}`}</b>
 
-                </>
-              }
-            </div>
-          </article>
+                    <b> - MZ: </b>{`${parcela.nom_cat.mz}`}
+                    &nbsp; &nbsp;
+                    <b>PA: </b>{`${parcela.nom_cat.pa}`}
+                  </p>
+                })}
 
-          <div className='contenedor-mapas'>
+              </>
+            }
+          </div>
+          <Button variant="contained" endIcon={<SendIcon />}>
+            <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to={`/Proyecto-EstadoParcelario/info-extra`}>Info Extra</Link>
+          </Button>
+        </article>
+
+        <div className='contenedor-mapas'>
           <article className='contenedor-imagen-mz-dx'>
             <img src={`/Proyecto-EstadoParcelario/imagenes-manzanas/dx-mz.png`} alt={`parcelas-dx-mz.png`} />
           </article>
@@ -63,8 +72,8 @@ export default function Home() {
         </div>
       </div>
 
-        
-      
+
+
     </section>
   )
 }
