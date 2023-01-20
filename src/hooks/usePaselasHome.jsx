@@ -1,9 +1,9 @@
 import { PARCELAS, TITULARES } from "../assets/auxBD"
+import { INF_ESTADOS } from "../assets/parcelasInfoEstado"
 import { DOMINIO, LIBRES, USURPADOS, VENDIDOS } from "../assets/vendidosBD"
 
 
 export default function useParcelasHome(id) {
-  
     let ESTADOS = [VENDIDOS, LIBRES, DOMINIO, USURPADOS].flat()
     let MATTIOLI = TITULARES[0]
     let RIVERO = TITULARES[1]
@@ -17,8 +17,8 @@ export default function useParcelasHome(id) {
       })
     })
 
-  function buscarParcela(partidaSelec) {
-      const parcelaFiltro= ESTADOS.filter(parcela => (parcela.partida === partidaSelec))
+  function buscarParcela(partidaSelec, ARRAY) {
+      const parcelaFiltro= ARRAY.filter(parcela => (parcela.partida === partidaSelec))
       const parcelaSeleccionada=parcelaFiltro[0]
 
       const {partida, ...restEstado} = parcelaSeleccionada
@@ -35,10 +35,10 @@ export default function useParcelasHome(id) {
        if (COMPARTIDOS.includes(parcela.id)) {
         titularidad='compartida'
        }
-       let estado =  buscarParcela(parcela.partida)
-       
+       let estado =  buscarParcela(parcela.partida, ESTADOS)
+       let infoEstado = buscarParcela(parcela.partida, INF_ESTADOS)
 
-        return {...ofRestParcela, titularidad, estado}
+        return {...ofRestParcela, titularidad, estado, infoEstado}
     }).sort(function (a, b) {
       if (a.nom_cat.mz > b.nom_cat.mz) {
         return -1;

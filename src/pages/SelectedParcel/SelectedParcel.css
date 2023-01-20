@@ -34,3 +34,38 @@
     margin-top: 30px;
     margin-bottom: 40px ;
 }
+
+.contenedor-informe-estado {
+    text-align: left;
+}
+
+.parcela-descripcion-titulo-dominio {
+    color: rgb(0, 167, 0);
+    font-size: 20pt;
+}
+.parcela-descripcion-titulo-vendido {
+    color: rgba(255, 132, 0, 0.584);
+    font-size: 20pt;
+}
+.parcela-descripcion-titulo-usurpado {
+    color: rgba(255, 0, 0, 0.744);
+    font-size: 20pt;
+}
+.parcela-descripcion-titulo-libre {
+    color: rgba(4, 0, 254, 0.581);
+    font-size: 20pt;
+}
+
+.contenedor-imagen-parcela-google {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contenedor-imagen-parcela-google img {
+    width: 100%;
+}
+.contenedor-info-google {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}

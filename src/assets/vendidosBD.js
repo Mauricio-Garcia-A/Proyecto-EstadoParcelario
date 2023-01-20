@@ -23,11 +23,11 @@ export const DOMINIO = [
 
 export const USURPADOS = [
     { partida: '4512', persona: 'NN', tipo: 'usurpado' },
+    { partida: '7614', persona: '#####', tipo: 'usurpado' },
+    { partida: '7633', persona: '#####', tipo: 'usurpado' },
 ]
 
 export const LIBRES = [
-    { partida: '7614', persona: '#####', tipo: 'libre' },
-    { partida: '7633', persona: '#####', tipo: 'libre' },
     { partida: '8498', persona: '#####', tipo: 'libre' },
     { partida: '8500', persona: '#####', tipo: 'libre' },
     { partida: '8503', persona: '#####', tipo: 'libre' },

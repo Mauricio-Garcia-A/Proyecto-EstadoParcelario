@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import IconoSVG from '../../components/IconoSvg/IconoSvg';
 import useParcelaId from '../../hooks/useParcelaId';
 
+
 import './SelectedParcel.css'
 
 export default function SelectedParcel() {
@@ -12,8 +13,6 @@ export default function SelectedParcel() {
   const navigate = useNavigate()
 
   const { parcelaSeleccionada } = useParcelaId(id)
-
-  console.log(parcelaSeleccionada)
 
   return (
     <section className='contenedor-parcela-seleccionada contenedor-stadar'>
@@ -29,26 +28,45 @@ export default function SelectedParcel() {
       <article className='contenedor-imagen-parcela-2'>
         <img src={`/Proyecto-EstadoParcelario/imagenes-parcelas/${parcelaSeleccionada.partida}.png`} alt={`parcelas-${parcelaSeleccionada.partida}.png`} />
       </article>
-      <article>
+      <article className='contenedor-informe-estado'>
         <h3>
           ESTADO DEL TERRENO:
-        
-      <b> {
-            (parcelaSeleccionada.estado.tipo==='dominio')
+          <b className={`parcela-descripcion-titulo-${parcelaSeleccionada.estado.tipo}`}> {
+            (parcelaSeleccionada.estado.tipo === 'dominio')
               ? 'EN DOMINIO DEL TITULAR'
-              : (parcelaSeleccionada.estado.tipo==='usurpado')
-                  ? 'USURPADO'
-                  :(parcelaSeleccionada.estado.tipo==='vendido')
-                    ? 'VENDIDO por BOLETO (sin escriturar)'
-                    : "LIBRE"
+              : (parcelaSeleccionada.estado.tipo === 'usurpado')
+                ? 'USURPADO'
+                : (parcelaSeleccionada.estado.tipo === 'vendido')
+                  ? 'VENDIDO por BOLETO (sin escriturar)'
+                  : "LIBRE"
           }
           </b>
-          </h3>
-          <h4>Supuesta Persona a acargo: {parcelaSeleccionada.estado.persona}</h4>
+        </h3>
+        <h4>Supuesta Persona a acargo: {parcelaSeleccionada.estado.persona}</h4>
+        <div  className='contenedor-info-google'>
+          <article className='contenedor-imagen-parcela-google'>
+            <img src={`/Proyecto-EstadoParcelario/imagenes-google/${parcelaSeleccionada.infoEstado.imagenGoogle}.png`} alt={`parcelas-${parcelaSeleccionada.partida}.png`} />
+          </article>
+          <div>
+            <b>Foto de 'Google Street View' sacada en el 2015</b>
+            <p>{parcelaSeleccionada.infoEstado.descripcionGoogle}</p>
+          </div>
+        </div>
+        {parcelaSeleccionada.infoEstado.infomacion.map(parrafo =>{
+          return <p>{parrafo}</p>
+        })}
+        <div>
+          {parcelaSeleccionada.infoEstado.imagenesPrubas.map(imagen =>{
+            return <article className='contenedor-imagen-parcela-google'>
+                      <img src={`/Proyecto-EstadoParcelario/imagenes-pruebas/${imagen}.png`} alt={`parcelas-${imagen}`} />
+                    </article>
+          })}
+          
+        </div>
+
       </article>
 
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+     
     </section>
 
   )
