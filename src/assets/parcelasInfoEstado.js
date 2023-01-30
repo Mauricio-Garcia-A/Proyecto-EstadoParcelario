@@ -8,8 +8,7 @@ export const INF_ESTADOS = [
         imagenGoogle: "G1190",
         descripcionGoogle: 'SIN DESCRIPCION',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            
         ]
 
     },
@@ -17,14 +16,13 @@ export const INF_ESTADOS = [
         id: "23d-4",
         partida: "4512",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion sobre el terreno',
+            
         ],
         imagenGoogle: "G4512",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se oserva el terreno cerrado por una pared y un porton',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "4512-actual-2023",
         ]
 
     },
@@ -37,8 +35,7 @@ export const INF_ESTADOS = [
         imagenGoogle: "G5518",
         descripcionGoogle: 'SIN DESCRIPCION',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+           
         ]
 
     },
@@ -61,13 +58,13 @@ export const INF_ESTADOS = [
         id: "4-5",
         partida: "7614",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion en el terreno',
+            'AVERIGUAR QUIEN OCUPA EL TERRENO...???????'
         ],
         imagenGoogle: "G7614",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa una contruccion en el terreno',
         imagenesPrubas: [
-            "imagen1",
+            "7614-actual-2023",
             "imagen2"
         ]
 
@@ -76,13 +73,13 @@ export const INF_ESTADOS = [
         id: "4-17",
         partida: "7626",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno cerrado con alambre y tranquera',
+            'CONSEGUIR Y COMPROBAR VALIDES BOLETO DE COMPRA Y VENTA ????????????'
         ],
         imagenGoogle: "G7626",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015, se observa que el terreno esta alambrado precariamente',
         imagenesPrubas: [
-            "imagen1",
+            "7626-actual-2023",
             "imagen2"
         ]
 
@@ -91,14 +88,15 @@ export const INF_ESTADOS = [
         id: "4-21",
         partida: "7630",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion en el terreno',
+            'Terrono unido con el de al lado (21 y 22)',
+            'CONSEGUIR Y COMPROBAR VALIDES BOLETO DE COMPRA Y VENTA ????????????'
         ],
         imagenGoogle: "G7630",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle:  'En la imagen de google del 2015 se oserva construccion en el terreno',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "7630-7631-actual-2023",
+            "boleto-cyv"
         ]
 
     },
@@ -106,14 +104,15 @@ export const INF_ESTADOS = [
         id: "4-22",
         partida: "7631",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion en el terreno',
+            'Terrono unido con el de al lado (21 y 22)',
+            'CONSEGUIR Y COMPROBAR VALIDES BOLETO DE COMPRA Y VENTA ????????????'
         ],
         imagenGoogle: "G7631",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se oserva construccion en el terreno',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "7630-7631-actual-2023",
+            "boleto-cyv"
         ]
 
     },
@@ -121,14 +120,14 @@ export const INF_ESTADOS = [
         id: "4-24",
         partida: "7633",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'AVERIGUAR QUIEN OCUPA EL TERRENO...???????'
+           
         ],
         imagenGoogle: "G7633",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015, se oserva construccion precaria en el terreno',
         imagenesPrubas: [
             "imagen1",
-            "imagen2"
+           
         ]
 
     },
@@ -136,13 +135,12 @@ export const INF_ESTADOS = [
         id: "27a-7",
         partida: "8497",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion en el terreno',          
         ],
         imagenGoogle: "G8497",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015, se oserva construccion precaria en el terreno',
         imagenesPrubas: [
-            "imagen1",
+            "8497-actual-2023",
             "imagen2"
         ]
 
@@ -151,29 +149,27 @@ export const INF_ESTADOS = [
         id: "27a-8",
         partida: "8498",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio. Con el pasto crecido.',
+            'LISTO PARA ALAMBRAR, para comenzar a escriturar?????'
         ],
         imagenGoogle: "G8498",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8498-actual-2023",
+           
         ]
-
     },
     {
         id: "27a-10",
         partida: "8500",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno esta alambrado y con lonas que lo cubren',
+            'AVERIGUA QUIEN LO ESTA USURPANDO?????'
         ],
         imagenGoogle: "G8500",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8500-actual-2023",
         ]
 
     },
@@ -181,14 +177,14 @@ export const INF_ESTADOS = [
         id: "27a-11",
         partida: "8501",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio. Con el pasto crecido.',
+            'AVERIGUAR SI EL SUPUESTO TITULAR TIENE EL BOLETO?????'
         ],
         imagenGoogle: "G8501",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8501-actual-2023",
+           
         ]
 
     },
@@ -196,14 +192,14 @@ export const INF_ESTADOS = [
         id: "27a-13",
         partida: "8503",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio. Con el pasto crecido.',
+            'LISTO PARA ALAMBRAR, para comenzar a escriturar?????'
         ],
         imagenGoogle: "G8503",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle:'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8503-8504-actual-2023",
+
         ]
 
     },
@@ -211,14 +207,13 @@ export const INF_ESTADOS = [
         id: "27a-14",
         partida: "8504",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno esta vacio. Y un perro atado en un poste cuidandolo',
+            'AVERIGUAR SI EL SUPUESTO TITULAR TIENE EL BOLETO?????'
         ],
         imagenGoogle: "G8504",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle:'En la imagen de google del 2015 se observa una contruccion precaria',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8503-8504-actual-2023",
         ]
 
     },
@@ -226,14 +221,13 @@ export const INF_ESTADOS = [
         id: "27a-15",
         partida: "8505",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa en el una construccion a medias, y al parecer abandonada',
+            'AVERIGUAR QUIEN LO USURPO...?????'
         ],
         imagenGoogle: "G8505",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa el terreno alambrado precariamente',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8505-actual-2023",
         ]
 
     },
@@ -241,14 +235,14 @@ export const INF_ESTADOS = [
         id: "27a-16",
         partida: "8506",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio. Con el pasto crecido.',
+            'LISTO PARA ALAMBRAR, para comenzar a escriturar?????'
         ],
         imagenGoogle: "G8506",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            '8506-actual-2023',
+            
         ]
 
     },
@@ -256,14 +250,14 @@ export const INF_ESTADOS = [
         id: "27b-11",
         partida: "8515",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion sobre el terreno',
+            'CONSEGUIR Y COMPROBAR VALIDES BOLETO DE COMPRA Y VENTA ????????????'
         ],
         imagenGoogle: "G8515",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa una construccion en el terreno',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8515-actual-2023",
+            "boleto-cyv"
         ]
 
     },
@@ -271,13 +265,13 @@ export const INF_ESTADOS = [
         id: "27b-12",
         partida: "8516",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio. Se ven huellas de veiculos.',
+            'LISTO PARA ALAMBRAR, para comenzar a escriturar?????'
         ],
         imagenGoogle: "G8516",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
+            "8516-actual-2023",
             "imagen2"
         ]
 
@@ -286,14 +280,14 @@ export const INF_ESTADOS = [
         id: "27b-17",
         partida: "8521",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio.',
+            'CONSEGUIR Y COMPROBAR VALIDES BOLETO DE COMPRA Y VENTA ????????????'
         ],
         imagenGoogle: "G8521",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8521-actual-2023",
+            "boleto-cyv"
         ]
 
     },
@@ -301,14 +295,14 @@ export const INF_ESTADOS = [
         id: "27b-18",
         partida: "8522",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa el terreno continua vacio.',
+            'LISTO PARA ALAMBRAR, para comenzar a escriturar?????'
         ],
         imagenGoogle: "G8522",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "8522-actual-2023",
+            "boleto-cyv"
         ]
 
     },
@@ -331,14 +325,13 @@ export const INF_ESTADOS = [
         id: "23w-3a",
         partida: "9322",
         infomacion: [
-            'PARRAFO 1',
-            'PARRAFO 2'
+            'Adjunto Foto actual del terreno sacada el 15 de enero 2023, en la que se observa contruccion sobre el terreno',
+            '',
         ],
         imagenGoogle: "G9322",
-        descripcionGoogle: 'SIN DESCRIPCION',
+        descripcionGoogle: 'En la imagen de google del 2015 se observa una construccion en el terreno',
         imagenesPrubas: [
-            "imagen1",
-            "imagen2"
+            "9322-actual-2023",
         ]
 
     },

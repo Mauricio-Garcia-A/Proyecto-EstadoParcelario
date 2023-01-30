@@ -58,7 +58,7 @@ export default function SelectedParcel() {
         <div>
           {parcelaSeleccionada.infoEstado.imagenesPrubas.map(imagen =>{
             return <article className='contenedor-imagen-parcela-google'>
-                      <img src={`/Proyecto-EstadoParcelario/imagenes-pruebas/${imagen}.png`} alt={`parcelas-${imagen}`} />
+                      <img src={`/Proyecto-EstadoParcelario/imagenes-pruebas/${imagen}.jpg`} alt={`parcelas-${imagen}`} />
                     </article>
           })}
           
