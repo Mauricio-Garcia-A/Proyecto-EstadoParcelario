@@ -9,8 +9,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'SIN DESCRIPCION',
         imagenesPrubas: [
             
-        ]
-
+        ],
+        arbaEstado: ['019-001190-9']
     },
     {
         id: "23d-4",
@@ -23,8 +23,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'En la imagen de google del 2015 se oserva el terreno cerrado por una pared y un porton',
         imagenesPrubas: [
             "4512-actual-2023",
-        ]
-
+        ],
+        arbaEstado: ['019-004512-9']
     },
     {
         id: "52-8a",
@@ -36,8 +36,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'SIN DESCRIPCION',
         imagenesPrubas: [
            
-        ]
-
+        ],
+        arbaEstado: ['019-005518-3']
     },
     {
         id: "19a-8",
@@ -51,8 +51,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "imagen1",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-007007-7']
     },
     {
         id: "4-5",
@@ -66,8 +66,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "7614-actual-2023",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-007614-8']
     },
     {
         id: "4-17",
@@ -81,8 +81,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "7626-actual-2023",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-007626-1']
     },
     {
         id: "4-21",
@@ -97,8 +97,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "7630-7631-actual-2023",
             "boleto-cyv"
-        ]
-
+        ],
+        arbaEstado: ['019-007630-0']
     },
     {
         id: "4-22",
@@ -113,8 +113,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "7630-7631-actual-2023",
             "boleto-cyv"
-        ]
-
+        ],
+        arbaEstado: ['019-007631-8']
     },
     {
         id: "4-24",
@@ -128,8 +128,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "imagen1",
            
-        ]
-
+        ],
+        arbaEstado: ['019-007633-4']
     },
     {
         id: "27a-7",
@@ -142,8 +142,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8497-actual-2023",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-008497-3']
     },
     {
         id: "27a-8",
@@ -156,8 +156,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
             "8498-actual-2023",
-           
-        ]
+        ],
+        arbaEstado: ['019-008498-1']
     },
     {
         id: "27a-10",
@@ -170,8 +170,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'En la imagen de google del 2015 se observa que el TERRENO ESTA LIBRE',
         imagenesPrubas: [
             "8500-actual-2023",
-        ]
-
+        ],
+        arbaEstado: ['019-008500-7']
     },
     {
         id: "27a-11",
@@ -185,8 +185,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8501-actual-2023",
            
-        ]
-
+        ],
+        arbaEstado: ['019-008501-5']
     },
     {
         id: "27a-13",
@@ -200,8 +200,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8503-8504-actual-2023",
 
-        ]
-
+        ],
+        arbaEstado: ['019-008503-1']
     },
     {
         id: "27a-14",
@@ -214,8 +214,8 @@ export const INF_ESTADOS = [
         descripcionGoogle:'En la imagen de google del 2015 se observa una contruccion precaria',
         imagenesPrubas: [
             "8503-8504-actual-2023",
-        ]
-
+        ],
+        arbaEstado: ['019-008504-0']
     },
     {
         id: "27a-15",
@@ -228,8 +228,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'En la imagen de google del 2015 se observa el terreno alambrado precariamente',
         imagenesPrubas: [
             "8505-actual-2023",
-        ]
-
+        ],
+        arbaEstado: ['019-008505-8']
     },
     {
         id: "27a-16",
@@ -243,8 +243,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             '8506-actual-2023',
             
-        ]
-
+        ],
+        arbaEstado: ['019-008506-6']
     },
     {
         id: "27b-11",
@@ -258,8 +258,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8515-actual-2023",
             "boleto-cyv"
-        ]
-
+        ],
+        arbaEstado: ['019-008515-5']
     },
     {
         id: "27b-12",
@@ -273,8 +273,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8516-actual-2023",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-008516-3']
     },
     {
         id: "27b-17",
@@ -288,8 +288,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8521-actual-2023",
             "boleto-cyv"
-        ]
-
+        ],
+        arbaEstado: ['019-008521-0']
     },
     {
         id: "27b-18",
@@ -303,8 +303,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "8522-actual-2023",
             "boleto-cyv"
-        ]
-
+        ],
+        arbaEstado: ['019-008522-8']
     },
     {
         id: "27b-19",
@@ -318,8 +318,8 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "imagen1",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-008523-6']
     },
     {
         id: "23w-3a",
@@ -332,8 +332,8 @@ export const INF_ESTADOS = [
         descripcionGoogle: 'En la imagen de google del 2015 se observa una construccion en el terreno',
         imagenesPrubas: [
             "9322-actual-2023",
-        ]
-
+        ],
+        arbaEstado: ['019-009322-0']
     },
     {
         id: "106-3d",
@@ -347,7 +347,7 @@ export const INF_ESTADOS = [
         imagenesPrubas: [
             "imagen1",
             "imagen2"
-        ]
-
+        ],
+        arbaEstado: ['019-007560-5', '019-007560-5-2']
     }
 ]

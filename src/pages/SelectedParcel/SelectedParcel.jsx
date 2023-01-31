@@ -63,7 +63,14 @@ export default function SelectedParcel() {
           })}
           
         </div>
+        <div>
+          {parcelaSeleccionada.infoEstado.arbaEstado.map(imagen => {
+            return <article className='contenedor-imagen-parcela-google'>
+              <img src={`/Proyecto-EstadoParcelario/imagenes-arba/${imagen}.png`} alt={`${imagen}`} />
+            </article>
+          })}
 
+        </div>
       </article>
 
      
